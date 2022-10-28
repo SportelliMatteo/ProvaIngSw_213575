@@ -81,5 +81,11 @@ public class FunnyAlgorithmsTest {
 		assertTrue(check);
 	}
 	
+	@Test
+	public void NotInIntervall() {
+		String prova = "50000";
+		assert(funnyAlgorithms.stringToIntConverter(prova) == 0);
+	}
+	
 
 }
