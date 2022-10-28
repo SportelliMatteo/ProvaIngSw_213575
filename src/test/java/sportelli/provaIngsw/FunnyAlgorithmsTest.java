@@ -37,6 +37,14 @@ public class FunnyAlgorithmsTest {
 		assertEquals(number, funnyAlgorithms.stringToIntConverter(prova));
 		System.out.println("Test finito a: " + LocalTime.now());
 	}
+	
+	@Test
+	public void notInIntervall() {
+		System.out.println("Test iniziato a: " + LocalTime.now());
+		String prova = "50000";
+		assert(funnyAlgorithms.stringToIntConverter(prova) == 0);
+		System.out.println("Test finito a: " + LocalTime.now());
+	}
 
 	@Test
 	public void findPositionInArray() {
@@ -92,13 +100,7 @@ public class FunnyAlgorithmsTest {
 		System.out.println("Test finito a: " + LocalTime.now());
 	}
 	
-	@Test
-	public void notInIntervall() {
-		System.out.println("Test iniziato a: " + LocalTime.now());
-		String prova = "50000";
-		assert(funnyAlgorithms.stringToIntConverter(prova) == 0);
-		System.out.println("Test finito a: " + LocalTime.now());
-	}
+	
 	
 
 }
