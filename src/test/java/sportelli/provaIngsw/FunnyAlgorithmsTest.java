@@ -42,9 +42,26 @@ public class FunnyAlgorithmsTest {
 	}
 	
 	@Test
-	public void NotfindPositionInArray() {
+	public void notFindPositionInArray() {
 		int[] num = {1, 2, 3, 4, 5, 6};
 		assertEquals(-1, funnyAlgorithms.binarySearch(num, 10));
+	}
+	
+	@Test
+	public void shouldBeSortedAscending() {
+		int[] array = {1, 2, 3};
+		int[] arrayCorretto = {3, 2, 1};
+		funnyAlgorithms.selectionSort(array, 0);
+		boolean check = false;
+		for(int i = 0; i < array.length; i++) {
+			if(array[i] == arrayCorretto[i]) {
+				check = true;
+			}else {
+				check = false;
+				break;
+			}
+		}
+		assertTrue(check);
 	}
 	
 
