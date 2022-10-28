@@ -73,15 +73,11 @@ public class FunnyAlgorithms {
 	 * @return
 	 * @throws UnsupportedOperationException
 	 */
-	public static int stringToIntConverter(String number) throws UnsupportedOperationException {
-		String checkString = number;
+	public int stringToIntConverter(String number) throws UnsupportedOperationException {
 		int numero;
         numero = Integer.parseInt(number);
         if(numero <= -32768 || numero >= 32767) {
         	return 0;
-        }
-        if(checkString.matches("[a-zA-Z]")) {
-        	return -1;
         }
 		return numero;
 	}
