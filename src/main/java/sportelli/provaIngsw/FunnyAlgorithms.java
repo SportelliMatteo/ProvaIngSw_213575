@@ -73,9 +73,12 @@ public class FunnyAlgorithms {
 	 * @return
 	 * @throws UnsupportedOperationException
 	 */
-	public int stringToIntConverter(String number) throws UnsupportedOperationException {
+	public static int stringToIntConverter(String number) throws UnsupportedOperationException {
 		int numero;
         numero = Integer.parseInt(number);
+        if(numero < -32768 || numero >= 32767) {
+        	return 0;
+        }
 		return numero;
 	}
 

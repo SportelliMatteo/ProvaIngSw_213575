@@ -9,5 +9,13 @@ import org.junit.Test;
  */
 public class FunnyAlgorithmsTest 
 {
+    public void shouldAnswerWithTrue() {
+    	assertTrue(true);
+    }
     
+    @Test
+    public void shouldBeNotZero() {
+    	String prova = "4000";
+    	assert(FunnyAlgorithms.stringToIntConverter(prova) != 0);
+    }
 }
