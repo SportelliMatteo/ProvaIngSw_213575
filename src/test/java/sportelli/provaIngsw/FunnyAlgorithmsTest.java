@@ -18,4 +18,11 @@ public class FunnyAlgorithmsTest
     	String prova = "4000";
     	assert(FunnyAlgorithms.stringToIntConverter(prova) != 0);
     }
+    
+    @Test
+    public void shouldBeInteger() {
+    	String prova = "10";
+    	int number = 10;
+    	assert(FunnyAlgorithms.stringToIntConverter(prova) == number);
+    }
 }
