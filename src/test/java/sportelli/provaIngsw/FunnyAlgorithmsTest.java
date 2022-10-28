@@ -37,8 +37,15 @@ public class FunnyAlgorithmsTest {
 
 	@Test
 	public void findPositionInArray() {
-		int[] num = {3, 4, 9, 1, 8, 4};
-		assertEquals(1, funnyAlgorithms.binarySearch(num, 4));
+		int[] num = {1, 2, 3, 4, 5, 6};
+		assertEquals(1, funnyAlgorithms.binarySearch(num, 2));
 	}
+	
+	@Test
+	public void NotfindPositionInArray() {
+		int[] num = {1, 2, 3, 4, 5, 6};
+		assertEquals(-1, funnyAlgorithms.binarySearch(num, 10));
+	}
+	
 
 }
